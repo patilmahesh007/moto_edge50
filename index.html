@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+        }
+
+        .output {
+            height: 300px;
+            width: fit-content;
+            border: none;
+            margin: 20px auto;
+
+        }
+.output img{
+    height: 300px;
+}
+        .img {
+            height: 100px;
+            cursor: pointer;
+            margin: 10px;
+
+        }
+    </style>
+    <p class="output" id="output"><img id="op-img" class="img" src="1.webp"></p>
+    <div class="container">
+
+        <img class="img" id="img1" src="1.webp" onmouseover="hover('1.webp')">
+        <img class="img" id="img2" src="2.webp" onmouseover="hover(`2.webp`)">
+        <img class="img" id="img3" src="3.webp" onmouseover="hover('3.webp')">
+        <img class="img" id="img4" src="4.webp" onmouseover="hover('4.webp')">
+        <img class="img" id="img5" src="5.webp" onmouseover="hover('5.webp')">
+
+
+    </div>
+    <script>
+
+        const outputImageElement = document.getElementById('op-img')
+        function hover(mp){
+        outputImageElement.src=mp
+    }
+    </script>
+
+
+</body>
+
+</html>
+
+
+
+
